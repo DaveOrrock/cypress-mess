@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cypress mess</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/fira.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/todo.css">
+  </head>
+
+  <body>
+    <section class="todoapp-wrapper">
+      <div class="todoapp">
+        <header class="header">
+          <h1>todos</h1>
+          <input class="new-todo" placeholder="What needs to be done?" data-test="new-todo" autofocus>
+        </header>
+        <section class="main">
+          <input id="toggle-all" class="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all as complete</label>
+          <ul class="todo-list" data-test="todo-list"></ul>
+        </section>
+        <footer class="footer">
+          <span class="todo-count"></span>
+          <ul class="filters">
+            <li>
+              <a href="#/" class="selected">All</a>
+            </li>
+            <li>
+              <a href="#/active">Active</a>
+            </li>
+            <li>
+              <a href="#/completed">Completed</a>
+            </li>
+          </ul>
+          <button class="todo-button clear-completed">Clear completed</button>
+        </footer>
+      </div>
+    </section>
+
+    <script src="./assets/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/highlight.pack.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/todo/helpers.js"></script>
+    <script src="./assets/js/todo/store.js"></script>
+    <script src="./assets/js/todo/model.js"></script>
+    <script src="./assets/js/todo/template.js"></script>
+    <script src="./assets/js/todo/view.js"></script>
+    <script src="./assets/js/todo/controller.js"></script>
+    <script src="./assets/js/todo/app.js"></script>
+  </body>
+</html>
